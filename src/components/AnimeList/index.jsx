@@ -7,9 +7,9 @@ const AnimeList = ({ api }) => {
             {api.data?.map((anime, index) => {
                 return (
                     <Link 
-                        href={`/${anime.mal_id}`} 
+                        href={`/anime/${anime.mal_id}`} 
                         className="cursor-pointer shadow-2xl transform transition-transform duration-00 hover:scale-102 rounded-b-xl overflow-hidden text-[#eeeeee] hover:text-[#ffc639]"
-                        key={index}
+                        key={index} 
                     >
                     <div className="rounded-t-lg overflow-hidden">
                             <Image 
@@ -27,6 +27,6 @@ const AnimeList = ({ api }) => {
         </div>
     );
 }
-
+ 
 export default AnimeList
 
